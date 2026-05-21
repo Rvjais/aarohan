@@ -139,14 +139,45 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         nav.classList.toggle('active');
+        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
     });
 
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            nav.classList.remove('active');
+            if (!link.closest('.dropdown')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
     });
+
+    // Close nav on outside tap
+    document.addEventListener('click', (e) => {
+        if (nav.classList.contains('active') &&
+            !nav.contains(e.target) &&
+            !hamburger.contains(e.target)) {
+            nav.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Mobile: tap dropdown parent to toggle submenu
+    document.querySelectorAll('.dropdown > .nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parent = link.parentElement;
+                document.querySelectorAll('.dropdown').forEach(d => {
+                    if (d !== parent) d.classList.remove('open');
+                });
+                parent.classList.toggle('open');
+            }
+        });
+    });
+
+
 
     // ========================================
     // SMOOTH SCROLL
