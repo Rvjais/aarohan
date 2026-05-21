@@ -550,6 +550,16 @@ ul {
     background: linear-gradient(to top, var(--white), transparent);
 }
 
+.hero-overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+    pointer-events: none;
+}
+
 /* ========================================
    SECTIONS
    ======================================== */
@@ -1294,74 +1304,197 @@ ul {
 /* ========================================
    TEAM
    ======================================== */
+/* ========================================
+   TEAM
+   ======================================== */
 .team {
-    background: var(--bg-cream);
+    background: linear-gradient(135deg, var(--bg-cream) 0%, #FFF5E6 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E67917' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
 }
 
 .team-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-bottom: 32px;
+    gap: 24px;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
 }
 
 .team-card {
     text-align: center;
-    padding: 32px 20px;
-    background: var(--light);
-    border-radius: var(--radius-lg);
-    transition: all 0.3s;
+    padding: 40px 24px 32px;
+    background: var(--white);
+    border-radius: 24px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 20px rgba(230, 121, 23, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    transform: scaleX(0);
+    transition: transform 0.3s;
 }
 
 .team-card:hover {
-    background: var(--bg-cream);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(230, 121, 23, 0.15);
 }
 
-.team-img {
-    width: 100px;
-    height: 100px;
+.team-card:hover::before {
+    transform: scaleX(1);
+}
+
+.team-img-wrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 24px;
+}
+
+.team-photo {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 16px;
-    border: 3px solid var(--primary);
+    border: 4px solid var(--white);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s;
+}
+
+.team-card:hover .team-photo {
+    transform: scale(1.05);
+}
+
+.team-initials {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 2;
+    box-shadow: 0 8px 25px rgba(230, 121, 23, 0.3);
+}
+
+.team-img-wrapper.no-img .team-photo {
+    display: none;
+}
+
+.team-img-wrapper:not(.no-img) .team-initials {
+    display: none;
+}
+
+.team-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    z-index: 3;
+    box-shadow: 0 4px 15px rgba(230, 121, 23, 0.4);
+    border: 3px solid var(--white);
 }
 
 .team-card h4 {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: var(--dark);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    font-weight: 600;
 }
 
 .team-role {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--primary);
     font-weight: 500;
+    padding: 6px 16px;
+    background: var(--primary-pale);
+    border-radius: 20px;
+    display: inline-block;
 }
 
 .team-executive {
     text-align: center;
-    padding: 24px;
-    background: var(--light);
-    border-radius: var(--radius-lg);
+    padding: 32px;
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(230, 121, 23, 0.08);
+    position: relative;
+    z-index: 1;
 }
 
 .team-executive h4 {
-    font-size: 1rem;
-    margin-bottom: 16px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
     color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-executive h4::before,
+.team-executive h4::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
 }
 
 .executive-list {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .executive-list span {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--gray);
+    padding: 8px 20px;
+    background: var(--bg-cream);
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.executive-list span:hover {
+    background: var(--primary-pale);
+    color: var(--primary);
 }
 
 /* ========================================
@@ -1648,20 +1781,23 @@ ul {
 /* Partners Slider */
 .partners-slider-wrapper {
     position: relative;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .partners-slider {
     overflow: hidden;
     position: relative;
+    padding: 30px 0;
 }
 
 .partner-slide {
     display: none;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 30px;
     animation: fadeIn 0.5s ease;
+    padding: 20px;
 }
 
 .partner-slide.active {
@@ -1676,11 +1812,11 @@ ul {
 .partner-logo-card {
     background: var(--bg-cream);
     border-radius: var(--radius-lg);
-    padding: 20px;
+    padding: 50px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 120px;
+    min-height: 280px;
     box-shadow: var(--shadow);
     transition: all 0.3s;
     border: 2px solid transparent;
@@ -1694,7 +1830,7 @@ ul {
 
 .partner-logo-card img {
     max-width: 100%;
-    max-height: 80px;
+    max-height: 180px;
     object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.7;
@@ -1706,22 +1842,31 @@ ul {
     opacity: 1;
 }
 
+/* Partners section header and CTA larger */
+.partners-header h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.partners-header p {
+    font-size: 1.1rem;
+}
+
 /* Slider Controls */
 .slider-controls {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    margin-top: 30px;
+    gap: 24px;
+    margin-top: 40px;
 }
 
 .partner-slider-btn {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     border: 2px solid var(--primary);
     background: var(--bg-cream);
     color: var(--primary);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     cursor: pointer;
     transition: all 0.3s;
     display: flex;
@@ -1738,13 +1883,13 @@ ul {
 .slider-indicators {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 12px;
+    margin-top: 24px;
 }
 
 .slider-indicator {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: var(--gray-light);
     cursor: pointer;
@@ -1769,9 +1914,10 @@ ul {
 }
 
 .partners-cta p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--gray);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 /* ========================================
@@ -1889,6 +2035,12 @@ ul {
 
 .contact-icon {
     font-size: 1.8rem;
+}
+
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--primary);
 }
 
 .contact-item h4 {
@@ -2443,101 +2595,6 @@ body {
     top: 10px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header.scrolled {
-    margin: 0;
-    top: 0;
-    border-radius: 0;
-    background: var(--primary);
-    box-shadow: 0 10px 30px rgba(230, 121, 23, 0.3);
-}
-
-/* Hide topbar when scrolled */
-.topbar {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    max-height: 100px;
-    opacity: 1;
-    overflow: hidden;
-}
-.header.scrolled .topbar {
-    max-height: 0;
-    padding: 0;
-    opacity: 0;
-    border: none;
-}
-
-/* Nav links and logo animation */
-.header .nav-link {
-    transition: color 0.3s ease;
-}
-.header.scrolled .nav-link {
-    color: var(--white) !important;
-}
-.header.scrolled .nav-link:hover {
-    color: var(--light) !important;
-}
-.header.scrolled .nav-link::after {
-    background: var(--white);
-}
-
-/* Mobile: override white nav-link color — mobile nav has white/cream background */
-@media (max-width: 768px) {
-    .header.scrolled .nav-link {
-        color: #1A1A1A !important;
-    }
-    .header.scrolled .nav-link:hover {
-        color: var(--primary) !important;
-    }
-    /* Also keep logo readable (don't invert on mobile) */
-    .header.scrolled .logo img {
-        filter: none !important;
-        transform: none !important;
-    }
-}
-
-.header .logo img {
-    transition: all 0.4s ease;
-}
-.header.scrolled .logo img {
-    filter: brightness(0) invert(1);
-    transform: scale(0.9);
-}
-
-/* Dropdown menus always white & readable regardless of header state */
-.header.scrolled .dropdown-menu {
-    background: #FFFFFF !important;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.18) !important;
-    border-top: 3px solid var(--primary) !important;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-}
-.header.scrolled .dropdown:hover > .dropdown-menu {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: translateY(0) !important;
-}
-.header.scrolled .dropdown-menu .nav-link,
-.header.scrolled .dropdown-menu a {
-    color: #1A1A1A !important;
-    font-size: 0.9rem;
-    padding: 10px 20px;
-}
-.header.scrolled .dropdown-menu a:hover {
-    background: #FFF3E8 !important;
-    color: var(--primary) !important;
-    padding-left: 25px;
-}
-
-/* Update header button when scrolled */
-.header.scrolled .btn-primary {
-    background: var(--white);
-    color: var(--primary);
-}
-.header.scrolled .btn-primary:hover {
-    background: var(--light);
 }
 
 
@@ -2627,7 +2684,7 @@ body {
 
 .hero-title {
     color: #FFF;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .hero-subtitle {

@@ -118,19 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(nextPartnerSlide, 4000);
 
     // ========================================
-    // HEADER SCROLL EFFECT
-    // ========================================
-    const header = document.querySelector('.header');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-
-    // ========================================
     // MOBILE MENU TOGGLE
     // ========================================
     const hamburger = document.getElementById('hamburger');

@@ -133,7 +133,8 @@
     <section class="hero">
         <div class="hero-slider" id="heroSlider">
             <div class="hero-slide active"
-                style="background-image: linear-gradient(135deg, rgba(230, 121, 23, 0.9), rgba(230, 121, 23, 0.7)), url('https://aarohanngo.org/wp-content/uploads/2022/02/center1-min.jpg');">
+                style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/center1-min.jpg');">
+                <div class="hero-overlay-dark"></div>
                 <div class="hero-content">
                     <span class="hero-badge">Registered Nonprofit | FCRA Compliant</span>
                     <h1 class="hero-title">Making a Difference <br><span class="highlight">Since 2005</span></h1>
@@ -146,7 +147,8 @@
                 </div>
             </div>
             <div class="hero-slide"
-                style="background-image: linear-gradient(135deg, rgba(230, 121, 23, 0.9), rgba(230, 121, 23, 0.7)), url('https://aarohanngo.org/wp-content/uploads/2022/02/ccr4-min.jpg');">
+                style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/ccr4-min.jpg');">
+                <div class="hero-overlay-dark"></div>
                 <div class="hero-content">
                     <span class="hero-badge">Education for Every Child</span>
                     <h1 class="hero-title">Early Childhood <br><span class="highlight">Care & Development</span></h1>
@@ -159,7 +161,8 @@
                 </div>
             </div>
             <div class="hero-slide"
-                style="background-image: linear-gradient(135deg, rgba(230, 121, 23, 0.9), rgba(230, 121, 23, 0.7)), url('https://aarohanngo.org/wp-content/uploads/2022/02/v1-min.jpg');">
+                style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/v1-min.jpg');">
+                <div class="hero-overlay-dark"></div>
                 <div class="hero-content">
                     <span class="hero-badge">Women Empowerment</span>
                     <h1 class="hero-title">Empowering <br><span class="highlight">Communities</span></h1>
@@ -172,7 +175,8 @@
                 </div>
             </div>
             <div class="hero-slide"
-                style="background-image: linear-gradient(135deg, rgba(230, 121, 23, 0.9), rgba(230, 121, 23, 0.7)), url('https://aarohanngo.org/wp-content/uploads/2023/05/DSC8483.jpg');">
+                style="background-image: url('https://aarohanngo.org/wp-content/uploads/2023/05/DSC8483.jpg');">
+                <div class="hero-overlay-dark"></div>
                 <div class="hero-content">
                     <span class="hero-badge">Transforming Lives</span>
                     <h1 class="hero-title">20,000+ Children <br><span class="highlight">Supported</span></h1>
@@ -187,9 +191,17 @@
         </div>
         <!-- Slider Navigation -->
         <div class="slider-nav">
-            <button class="slider-btn prev" id="sliderPrev">❮</button>
+            <button class="slider-btn prev" id="sliderPrev">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
             <div class="slider-dots" id="sliderDots"></div>
-            <button class="slider-btn next" id="sliderNext">❯</button>
+            <button class="slider-btn next" id="sliderNext">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
         </div>
         <div class="hero-overlay"></div>
     </section>
@@ -530,109 +542,6 @@
         </div>
     </section>
 
-    <!-- Impact Stats Section -->
-    <section class="impact-stats section" id="impact">
-        <div class="container">
-            <div class="impact-wrapper">
-                <div class="impact-header">
-                    <span class="section-badge">Our Impact</span>
-                    <h2>Transforming Lives Together</h2>
-                    <p>Measurable outcomes that matter — creating real change in communities across India</p>
-                </div>
-
-                <div class="impact-grid">
-                    <div class="impact-card impact-primary">
-                        <div class="impact-icon">👨‍👩‍👧‍👦</div>
-                        <div class="impact-data">
-                            <span class="impact-number" data-count="20000">0</span>
-                            <span class="impact-plus">+</span>
-                        </div>
-                        <span class="impact-label">Children Supported</span>
-                        <span class="impact-sub">Across Delhi NCR, Odisha, Andhra Pradesh & Jharkhand</span>
-                    </div>
-
-                    <div class="impact-card">
-                        <div class="impact-icon">📅</div>
-                        <div class="impact-data">
-                            <span class="impact-number" data-count="21">0</span>
-                            <span class="impact-plus">+</span>
-                        </div>
-                        <span class="impact-label">Years of Service</span>
-                        <span class="impact-sub">Making a difference since 2005</span>
-                    </div>
-
-                    <div class="impact-card">
-                        <div class="impact-icon">👩‍💼</div>
-                        <div class="impact-data">
-                            <span class="impact-number" data-count="5000">0</span>
-                            <span class="impact-plus">+</span>
-                        </div>
-                        <span class="impact-label">Women Empowered</span>
-                        <span class="impact-sub">Through Teach the Mother program</span>
-                    </div>
-
-                    <div class="impact-card">
-                        <div class="impact-icon">🏘️</div>
-                        <div class="impact-data">
-                            <span class="impact-number" data-count="50">0</span>
-                            <span class="impact-plus">+</span>
-                        </div>
-                        <span class="impact-label">Communities Served</span>
-                        <span class="impact-sub">Villages and slum areas</span>
-                    </div>
-
-                    <div class="impact-card">
-                        <div class="impact-icon">🎓</div>
-                        <div class="impact-data">
-                            <span class="impact-number">100%</span>
-                        </div>
-                        <span class="impact-label">School Integration</span>
-                        <span class="impact-sub">Children enrolled in mainstream schools</span>
-                    </div>
-
-                    <div class="impact-card">
-                        <div class="impact-icon">❤️</div>
-                        <div class="impact-data">
-                            <span class="impact-number">2-3%</span>
-                        </div>
-                        <span class="impact-label">Dropout Rate Only</span>
-                        <span class="impact-sub">Against national average of 20%+</span>
-                    </div>
-                </div>
-
-                <div class="impact-highlights">
-                    <div class="highlight-item">
-                        <span class="highlight-icon">🏆</span>
-                        <div>
-                            <strong>15+ Awards</strong>
-                            <p>Including Leadership in Education Award 2019, Best NGO Award 2017-18</p>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-icon">🌍</span>
-                        <div>
-                            <strong>University Recognition</strong>
-                            <p>University of Alabama studied Aarohan's "childhood to livelihood" model</p>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-icon">🤝</span>
-                        <div>
-                            <strong>Corporate Partnerships</strong>
-                            <p>Zomato, Azim Premji Foundation, Bank of America, Deloitte, NDTV</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="impact-quote">
-                    <blockquote>
-                        "The healthy growth of a child is possible with a conducive environment — encompassing family, community, education, income, and dignity."
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Team Section -->
     <section class="team section" id="team">
         <div class="container">
@@ -643,26 +552,58 @@
             </div>
             <div class="team-grid">
                 <div class="team-card">
-                    <img src="" alt="Rani Patel" onerror="this.style.display='none'" data-initials="RP"
-                        class="team-img">
+                    <div class="team-img-wrapper">
+                        <img src="media/Peoples/Rani.jpg" alt="Ms. Rani Patel" class="team-photo"
+                            onerror="this.parentElement.classList.add('no-img')">
+                        <span class="team-initials">RP</span>
+                        <span class="team-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </span>
+                    </div>
                     <h4>Ms. Rani Patel</h4>
                     <span class="team-role">Founder & President</span>
                 </div>
                 <div class="team-card">
-                    <img src="" alt="Dr. Rekha Khandelwal" onerror="this.style.display='none'" data-initials="RK"
-                        class="team-img">
+                    <div class="team-img-wrapper">
+                        <img src="media/Peoples/rekha-khandalwal.jpg" alt="Dr. Rekha Khandelwal" class="team-photo"
+                            onerror="this.parentElement.classList.add('no-img')">
+                        <span class="team-initials">RK</span>
+                        <span class="team-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </span>
+                    </div>
                     <h4>Dr. Rekha Khandelwal</h4>
                     <span class="team-role">Vice President</span>
                 </div>
                 <div class="team-card">
-                    <img src="" alt="Shashi Sahai" onerror="this.style.display='none'" data-initials="SS"
-                        class="team-img">
+                    <div class="team-img-wrapper">
+                        <img src="media/Peoples/Shashi Sahai.jpg" alt="Mr. Shashi Sahai" class="team-photo"
+                            onerror="this.parentElement.classList.add('no-img')">
+                        <span class="team-initials">SS</span>
+                        <span class="team-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </span>
+                    </div>
                     <h4>Mr. Shashi Sahai</h4>
                     <span class="team-role">Treasurer</span>
                 </div>
                 <div class="team-card">
-                    <img src="" alt="Esha Guha" onerror="this.style.display='none'" data-initials="EG"
-                        class="team-img">
+                    <div class="team-img-wrapper">
+                        <img src="media/Peoples/Esha Guha.jpg" alt="Ms. Esha Guha" class="team-photo"
+                            onerror="this.parentElement.classList.add('no-img')">
+                        <span class="team-initials">EG</span>
+                        <span class="team-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </span>
+                    </div>
                     <h4>Ms. Esha Guha</h4>
                     <span class="team-role">Joint Secretary</span>
                 </div>
@@ -927,8 +868,16 @@
                     </div>
                 </div>
                 <div class="slider-controls">
-                    <button class="partner-slider-btn prev" id="partnerSliderPrev">❮</button>
-                    <button class="partner-slider-btn next" id="partnerSliderNext">❯</button>
+                    <button class="partner-slider-btn prev" id="partnerSliderPrev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="partner-slider-btn next" id="partnerSliderNext">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
                 </div>
                 <div class="slider-indicators" id="partnerSliderIndicators"></div>
             </div>
@@ -1003,21 +952,35 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="contact-icon">📍</span>
+                        <span class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </span>
                         <div>
                             <h4>Address</h4>
                             <p>B-127, Malviya Nagar,<br>New Delhi - 110017, India</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📧</span>
+                        <span class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
                         <div>
                             <h4>Email</h4>
                             <p><a href="mailto:aarohan.ngo@gmail.com">aarohan.ngo@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📞</span>
+                        <span class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </span>
                         <div>
                             <h4>Phone</h4>
                             <p><a href="tel:+911141007526">+91-11-41007526</a></p>
