@@ -9,13 +9,15 @@
         content="Aarohan NGO - A nonprofit charity based in New Delhi, India. Making a difference since 2005 through education, skilling, and awareness for children, women, and marginalized communities.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <!-- Animated Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    
     <!-- Header / Navigation -->
     <header class="header">
         <div class="container header-inner">
@@ -113,6 +115,11 @@
                     <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
             </button>
+        </div>
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,112.56,187.52,94.39c43.6-14,88.71-33.15,133.87-37.95Z" class="shape-fill"></path>
+            </svg>
         </div>
     </section>
 
@@ -251,12 +258,23 @@
     <!-- Programs Section -->
     <section class="programs section" id="programs">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">What We Do</span>
-                <h2 class="section-title">Our Programs & Projects</h2>
-                <p class="section-subtitle">Comprehensive programs tailored to community needs</p>
+            <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; text-align: left;">
+                <div>
+                    <span class="section-badge">What We Do</span>
+                    <h2 class="section-title">Our Programs & Projects</h2>
+                    <p class="section-subtitle" style="margin: 0;">Comprehensive programs tailored to community needs</p>
+                </div>
+                <div class="slider-controls" style="margin-top: 0; margin-bottom: 24px;">
+                    <button class="slider-btn prev" id="progPrev">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="slider-btn next" id="progNext">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
             </div>
-            <div class="programs-grid">
+            <div class="programs-slider-container">
+                <div class="programs-track" id="programsTrack">
                 <div class="program-card">
                     <div class="program-img"
                         style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/center1-min.jpg');">
@@ -358,6 +376,7 @@
                             <li>Safe learning spaces</li>
                         </ul>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

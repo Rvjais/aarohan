@@ -70,6 +70,64 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ========================================
+    // PROGRAMS SLIDER
+    // ========================================
+    const progTrack = document.getElementById('programsTrack');
+    const progPrevBtn = document.getElementById('progPrev');
+    const progNextBtn = document.getElementById('progNext');
+    let progCurrentIndex = 0;
+
+    if (progTrack && progPrevBtn && progNextBtn) {
+        const progCards = progTrack.querySelectorAll('.program-card');
+        
+        function updateProgSlider() {
+            if(progCards.length === 0) return;
+            const cardWidth = progCards[0].offsetWidth;
+            const gap = 24;
+            const totalWidth = cardWidth + gap;
+            
+            const containerWidth = progTrack.parentElement.offsetWidth;
+            // Calculate how many cards are visible
+            const visibleCards = Math.max(1, Math.floor(containerWidth / totalWidth));
+            const maxIndex = Math.max(0, progCards.length - visibleCards);
+
+            if (progCurrentIndex > maxIndex) progCurrentIndex = maxIndex;
+            if (progCurrentIndex < 0) progCurrentIndex = 0;
+
+            const translateX = -(progCurrentIndex * totalWidth);
+            progTrack.style.transform = `translateX(${translateX}px)`;
+            
+            progPrevBtn.style.opacity = progCurrentIndex === 0 ? '0.5' : '1';
+            progPrevBtn.style.cursor = progCurrentIndex === 0 ? 'default' : 'pointer';
+            
+            progNextBtn.style.opacity = progCurrentIndex === maxIndex ? '0.5' : '1';
+            progNextBtn.style.cursor = progCurrentIndex === maxIndex ? 'default' : 'pointer';
+        }
+
+        progPrevBtn.addEventListener('click', () => {
+            if (progCurrentIndex > 0) {
+                progCurrentIndex--;
+                updateProgSlider();
+            }
+        });
+
+        progNextBtn.addEventListener('click', () => {
+            const cardWidth = progCards[0].offsetWidth + 24;
+            const containerWidth = progTrack.parentElement.offsetWidth;
+            const visibleCards = Math.max(1, Math.floor(containerWidth / cardWidth));
+            const maxIndex = Math.max(0, progCards.length - visibleCards);
+            
+            if (progCurrentIndex < maxIndex) {
+                progCurrentIndex++;
+                updateProgSlider();
+            }
+        });
+
+        window.addEventListener('resize', updateProgSlider);
+        setTimeout(updateProgSlider, 100);
+    }
+
+    // ========================================
     // PARTNERS SLIDER
     // ========================================
     const partnerSlides = document.querySelectorAll('.partner-slide');
