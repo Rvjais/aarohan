@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --primary-purple: #6B46FF;
-  --light-purple: #E8DDFF;
-  --mid-purple: #9D84FF;
+  --primary-purple: #E67926;
+  --light-purple: #FCECDD;
+  --mid-purple: #F0A060;
   --yellow: #FFC436;
   --light-yellow: #FFE8A1;
   --dark-text: #1F1F39;
   --light-text: #858597;
   --bg-color: #FAFAFB;
-  --card-light-purple: #DFD3FF;
-  --card-dark-purple: #6B46FF;
+  --card-light-purple: #F5DCC4;
+  --card-dark-purple: #E67926;
   --card-yellow: #FFD659;
   --border-radius-lg: 40px;
   --border-radius-md: 25px;
@@ -357,7 +357,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 /* Hero Section */
 .hero {
-  padding: 220px 0 120px;
+  padding: 280px 0 180px;
   text-align: center;
   position: relative;
   max-width: 1600px;
@@ -448,8 +448,8 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 /* Hero Graphics */
 .hero-img-left {
   position: absolute;
-  top: 140px;
-  left: 3%;
+  top: 80px;
+  left: 0%;
   width: 280px;
   height: 280px;
   border-radius: 50%;
@@ -461,8 +461,8 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .hero-img-right {
   position: absolute;
-  top: 240px;
-  right: 2%;
+  top: 380px;
+  right: -2%;
   width: 380px;
   height: 380px;
   z-index: 1;
@@ -480,8 +480,8 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .hero-arrow-left {
   position: absolute;
-  top: 350px;
-  left: 8%;
+  top: 480px;
+  left: 3%;
   width: 120px;
   z-index: 1;
 }
@@ -506,8 +506,8 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .hero-concentric {
   position: absolute;
-  top: 480px;
-  left: 12%;
+  top: 680px;
+  left: 6%;
   width: 100px;
   z-index: 1;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -538,8 +538,8 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .hero-badge {
   position: absolute;
-  top: 120px;
-  right: 8%;
+  top: 80px;
+  right: 5%;
   width: 160px;
   animation: spin 20s linear infinite;
   z-index: 1;
@@ -568,7 +568,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 /* Features Section */
 .features {
-  padding: 120px 0;
+  padding: 60px 0;
   position: relative;
 }
 
@@ -598,7 +598,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
   transform: rotate(-5deg);
 }
 
-.tag-1 { background: #E8DDFF; color: var(--primary-purple); transform: rotate(-5deg); }
+.tag-1 { background: #FCECDD; color: var(--primary-purple); transform: rotate(-5deg); }
 .tag-2 { background: var(--yellow); color: white; transform: rotate(5deg); }
 .tag-3 { background: var(--primary-purple); color: white; transform: rotate(-5deg); }
 
@@ -686,7 +686,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 /* Learning Materials Section */
 .learning {
-  padding: 120px 0;
+  padding: 60px 0;
   display: flex;
   align-items: center;
   gap: 150px;
@@ -757,9 +757,9 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 /* Team Section */
 .team-section {
   background-color: var(--primary-purple);
-  padding: 120px 0;
+  padding: 60px 0;
   color: white;
-  margin: 120px 0;
+  margin: 60px 0;
   position: relative;
   overflow: hidden;
 }
@@ -818,7 +818,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .bg-yellow { background-color: #FFD250; }
 .bg-pink { background-color: #FFB1B1; }
-.bg-purple { background-color: #9D84FF; }
+.bg-purple { background-color: #F0A060; }
 .bg-green { background-color: #7AD6A1; }
 
 .team-member h4 {
@@ -848,7 +848,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 /* Blog Section */
 .blog {
-  padding: 120px 0 150px;
+  padding: 60px 0 80px;
 }
 
 .blog h2 {
@@ -956,7 +956,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 .text-center { text-align: center; }
 
 /* Support Section */
-.support-section { padding: 120px 0; background: white; }
+.support-section { padding: 60px 0; background: white; }
 .support-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
 .support-card { background: var(--bg-color); padding: 40px 30px; border-radius: 30px; text-align: center; transition: transform 0.3s ease; }
 .support-card:hover { transform: translateY(-10px); }
@@ -966,7 +966,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 .support-card p { font-size: 1.05rem; }
 
 /* Gallery Section */
-.gallery-section { padding: 120px 0; background: var(--bg-color); }
+.gallery-section { padding: 60px 0; background: var(--bg-color); }
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; align-items: center; }
 .gallery-grid img { width: 100%; border-radius: 35px; transition: transform 0.3s ease; box-shadow: 0 15px 40px rgba(0,0,0,0.08); cursor: pointer; }
 .gallery-grid img:nth-child(odd) { height: 300px; object-fit: cover; }
@@ -974,7 +974,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 .gallery-grid img:hover { transform: translateY(-10px) scale(1.02); z-index: 2; position: relative; }
 
 /* Careers Section */
-.careers-section { padding: 120px 0; background: white; }
+.careers-section { padding: 60px 0; background: white; }
 .careers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 .careers-img { width: 100%; border-radius: 40px; margin-bottom: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
 .careers-form { background: var(--bg-color); padding: 60px; border-radius: 50px; }
@@ -984,8 +984,8 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 .careers-form button { border: none; cursor: pointer; width: 100%; justify-content: center; margin-top: 10px; }
 
 /* Main Footer */
-.main-footer { background: var(--dark-text); color: white; padding: 100px 0 30px; position: relative; overflow: hidden; margin-top: 50px; }
-.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 80px; }
+.main-footer { background: var(--dark-text); color: white; padding: 60px 0 30px; position: relative; overflow: hidden; margin-top: 30px; }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 60px; }
 .footer-col h4 { font-size: 1.6rem; margin-bottom: 30px; color: var(--yellow); }
 .footer-col ul { list-style: none; }
 .footer-col ul li { margin-bottom: 18px; }
