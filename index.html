@@ -1,933 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarohan | Nonprofit Charity | Education & Empowerment Since 2005</title>
-    <meta name="description"
-        content="Aarohan NGO - A nonprofit charity based in New Delhi, India. Making a difference since 2005 through education, skilling, and awareness for children, women, and marginalized communities.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Aarohan NGO - Empowering the Community</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <!-- Animated Background Blobs -->
-    <div class="bg-blob blob-1"></div>
-    <div class="bg-blob blob-2"></div>
     
-    <!-- Header / Navigation -->
-    <header class="header">
-        <div class="container header-inner">
-            <a href="#" class="logo">
-                <img src="https://aarohanngo.org/wp-content/uploads/2026/01/Aarohan_Logo__4.png" alt="Aarohan Logo"
-                    class="logo-img">
-            </a>
-            <nav class="nav" id="nav">
-                <ul class="nav-list">
-                    <li class="dropdown">
-                        <a href="#about" class="nav-link">About Us</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="pages/our-board.html">Our Board</a></li>
-                            <li><a href="pages/what.html">What We Do</a></li>
-                            <li><a href="pages/methodology.html">Aarohan – Methodology</a></li>
-                            <li><a href="pages/awards-recognition.html">Awards & Recognition</a></li>
-                            <li><a href="pages/supporters-donors.html">Supporters & Donors</a></li>
-                            <li><a href="pages/fcra.html">Compliances</a></li>
-                            <li><a href="pages/annual-report.html">Annual Report</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="pages/early-childhood-care-and-development.html">Early Childhood Care and Development</a></li>
-                            <li><a href="pages/after-school-hours.html">After School Hours</a></li>
-                            <li><a href="pages/women-empowerment.html">Women Empowerment</a></li>
-                            <li><a href="pages/tribal-community.html">Tribal Community</a></li>
-                            <li><a href="pages/transgender-projects.html">Aarohan With 3rd Gender</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="#">Other Project</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="pages/centre-for-excellence.html">Center for Excellence</a></li>
-                                    <li><a href="pages/community-library.html">Community Library</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#campaign" class="nav-link">Campaign</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="pages/covid-response.html">Covid Respons</a></li>
-                            <li><a href="pages/digital-transformation.html">Digital Transformation</a></li>
-                            <li><a href="pages/vaccination-for-transgender-marginalized.html">Vaccination for Transgender & Marginalized</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#impact" class="nav-link">Impact Stories</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="pages/tara-impact-story.html">Tara</a></li>
-                            <li><a href="pages/dheeraj-impact-story.html">Dheeraj</a></li>
-                            <li><a href="pages/bhawna-impact-story.html">Bhawna</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="pages/fcra-2.html" class="nav-link">FCRA</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="#donate" class="btn btn-primary">Donate Now</a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </header>
 
-    <!-- Hero Section with Slider -->
-    <section class="hero">
-        <div class="hero-slider" id="heroSlider">
-            <div class="hero-slide active"
-                style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/center1-min.jpg');">
-            </div>
-            <div class="hero-slide"
-                style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/ccr4-min.jpg');">
-            </div>
-            <div class="hero-slide"
-                style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/v1-min.jpg');">
-            </div>
-            <div class="hero-slide"
-                style="background-image: url('https://aarohanngo.org/wp-content/uploads/2023/05/DSC8483.jpg');">
-            </div>
-        </div>
-        <!-- Slider Navigation -->
-        <div class="slider-nav">
-            <button class="slider-btn prev" id="sliderPrev">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-            </button>
-            <div class="slider-dots" id="sliderDots"></div>
-            <button class="slider-btn next" id="sliderNext">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-            </button>
-        </div>
-        <div class="custom-shape-divider-bottom">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,112.56,187.52,94.39c43.6-14,88.71-33.15,133.87-37.95Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about section" id="about">
-        <div class="container">
-            <div class="about-header">
-                <span class="section-badge">About Us</span>
-                <h2>Our Story</h2>
-                <p class="about-tagline">From one child to thousands of lives transformed</p>
-            </div>
-
-            <div class="about-journey">
-                <div class="journey-timeline">
-                    <div class="timeline-marker">
-                        <span class="timeline-year">2004</span>
-                        <span class="timeline-event">The Spark</span>
-                    </div>
-                    <div class="timeline-marker">
-                        <span class="timeline-year">2005</span>
-                        <span class="timeline-event">Aarohan Founded</span>
-                    </div>
-                    <div class="timeline-marker">
-                        <span class="timeline-year">2006</span>
-                        <span class="timeline-event">First ECCE Center</span>
-                    </div>
-                    <div class="timeline-marker">
-                        <span class="timeline-year">2012</span>
-                        <span class="timeline-event">Teach the Mother</span>
-                    </div>
-                    <div class="timeline-marker">
-                        <span class="timeline-year">Today</span>
-                        <span class="timeline-event">20,000+ Lives</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-images">
-                    <div class="about-main-img">
-                        <img src="https://aarohanngo.org/wp-content/uploads/2022/02/about-us-4.jpg"
-                            alt="Children learning" class="about-img">
-                        <div class="about-year-badge">Since 2005</div>
-                    </div>
-                    <div class="about-founders">
-                        <div class="founder-card">
-                            <img src="https://aarohanngo.org/wp-content/uploads/2026/01/Aarohan_Logo__4.png" alt="Rani Patel" style="object-fit:contain;background:#FFF3E8;"
-                                class="founder-img">
-                            <div class="founder-info">
-                                <strong>Ms. Rani Patel</strong>
-                                <span>Founder & President</span>
-                            </div>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="media/Aarohan_Logo__4.png" alt="Aarohan Logo" width="241">
+        </a>
+        <nav>
+            <ul class="animated-menu">
+                <li>
+                    <a href="index.html" class="nav-item-animated">
+                        <i class="fas fa-home"></i>
+                        <div class="nav-text">
+                            <strong>Home</strong>
+                            <small>sweet home</small>
                         </div>
-                        <div class="founder-card">
-                            <img src="https://aarohanngo.org/wp-content/uploads/2026/01/Aarohan_Logo__4.png" alt="Anjana Tata" style="object-fit:contain;background:#FFF3E8;"
-                                class="founder-img">
-                            <div class="founder-info">
-                                <strong>Ms. Anjana Tata</strong>
-                                <span>Co-Founder</span>
-                            </div>
+                    </a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="pages/about-us.html" class="nav-item-animated">
+                        <i class="fas fa-users"></i>
+                        <div class="nav-text">
+                            <strong>About us</strong>
+                            <small>who we are</small>
                         </div>
-                    </div>
-                </div>
-
-                <div class="about-content">
-                    <h3>The Story of Aarohan</h3>
-
-                    <div class="story-section">
-                        <h4>It Started with One Child</h4>
-                        <p>In 2004, our founder Ms. Rani Patel encountered a 7-year-old rag picker named Rohan on the streets of Delhi. Learning about street children's struggles with substance abuse and exploitation, she and colleague Anjana Tata decided to bring these children into the educational network — and <strong>Aarohan</strong> was born.</p>
-                    </div>
-
-                    <div class="story-section">
-                        <h4>Our Journey</h4>
-                        <p>From that single act of compassion, Aarohan has grown into a movement touching thousands of lives. Today, we work across Delhi NCR, Odisha, Andhra Pradesh, and Jharkhand, serving children, women, and marginalized communities through education, healthcare, skill training, and community development.</p>
-                    </div>
-
-                    <div class="about-stats">
-                        <div class="about-stat">
-                            <span class="stat-value">4</span>
-                            <span class="stat-text">States</span>
-                        </div>
-                        <div class="about-stat">
-                            <span class="stat-value">6</span>
-                            <span class="stat-text">Programs</span>
-                        </div>
-                        <div class="about-stat">
-                            <span class="stat-value">50+</span>
-                            <span class="stat-text">Communities</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="vision-mission">
-                <div class="vm-card vm-vision">
-                    <div class="vm-header">
-                        <span class="vm-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></span>
-                        <h4>Our Vision</h4>
-                    </div>
-                    <p>For every child to have the opportunity to exercise her/his right to education, health, and nutrition — and for every adult to access a livelihood with dignity.</p>
-                    <div class="vm-tags">
-                        <span>Education for All</span>
-                        <span>Health & Nutrition</span>
-                        <span>Livelihood with Dignity</span>
-                    </div>
-                </div>
-                <div class="vm-card vm-mission">
-                    <div class="vm-header">
-                        <span class="vm-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg></span>
-                        <h4>Our Mission</h4>
-                    </div>
-                    <p>To provide comprehensive and holistic support through education, health care, skill training, and other programs for children, women, transgender, and community members — aligning with Sustainable Development Goals.</p>
-                    <div class="vm-tags">
-                        <span>Holistic Support</span>
-                        <span>SDG Aligned</span>
-                        <span>Community Focus</span>
-                    </div>
-                </div>
-                <div class="vm-card vm-values">
-                    <div class="vm-header">
-                        <span class="vm-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg></span>
-                        <h4>Our Values</h4>
-                    </div>
-                    <p>Regardless of caste, creed, religion, or gender — we believe every individual deserves an equal opportunity to thrive and reach their full potential.</p>
-                    <div class="vm-tags">
-                        <span>Inclusion</span>
-                        <span>Integrity</span>
-                        <span>Impact</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Programs Section -->
-    <section class="programs section" id="programs">
-        <div class="container">
-            <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; text-align: left;">
-                <div>
-                    <span class="section-badge">What We Do</span>
-                    <h2 class="section-title">Our Programs & Projects</h2>
-                    <p class="section-subtitle" style="margin: 0;">Comprehensive programs tailored to community needs</p>
-                </div>
-                <div class="slider-controls" style="margin-top: 0; margin-bottom: 24px;">
-                    <button class="slider-btn prev" id="progPrev">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                    </button>
-                    <button class="slider-btn next" id="progNext">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                    </button>
-                </div>
-            </div>
-            <div class="programs-slider-container">
-                <div class="programs-track" id="programsTrack">
-                <div class="program-card">
-                    <div class="program-img"
-                        style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/center1-min.jpg');">
-                    </div>
-                    <div class="program-content">
-                        <span class="program-category">Education</span>
-                        <h3>Early Childhood Care & Development</h3>
-                        <p>Since 2006, our ECCE centers provide holistic development for children ages 2-5 from
-                            underprivileged backgrounds. Our first center in Jagdamba Camp, South Delhi became a model
-                            replicated by Save the Children-Nepal, IGNOU, Manipal University, and University of Alabama.
-                        </p>
-                        <ul class="program-highlights">
-                            <li>Play-way teaching methods</li>
-                            <li>Parent & caregiver training</li>
-                            <li>Child protection awareness</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="program-card">
-                    <div class="program-img"
-                        style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/ccr4-min.jpg');">
-                    </div>
-                    <div class="program-content">
-                        <span class="program-category">Education</span>
-                        <h3>After School Hours</h3>
-                        <p>Academic support for school-going children through four specialized projects:</p>
-                        <ul class="project-list">
-                            <li><strong>PROJECT PASS</strong> — Primary level support with mid-day meals</li>
-                            <li><strong>PROJECT PATHWAYS</strong> — Classes VI-VIII with Science & Math focus</li>
-                            <li><strong>PROJECT HOPE</strong> — Classes IX-X with Board exam preparation</li>
-                            <li><strong>PROJECT SHIKHAR</strong> — Classes XI-XII with career counseling</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="program-card">
-                    <div class="program-img"
-                        style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/v1-min.jpg');">
-                    </div>
-                    <div class="program-content">
-                        <span class="program-category">Empowerment</span>
-                        <h3>Women Empowerment — "Teach the Mother"</h3>
-                        <p>Launched in 2012, recognizing that a child's growth is proportionate to the strength of the
-                            mother. Partners with USHA Sili School for certification.</p>
-                        <ul class="program-highlights">
-                            <li>Fashion design & garment making</li>
-                            <li>Digital & financial literacy</li>
-                            <li>Entrepreneur skills training</li>
-                            <li>Personal grooming workshops</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="program-card">
-                    <div class="program-img"
-                        style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/tri2-min.jpg');">
-                    </div>
-                    <div class="program-content">
-                        <span class="program-category">Community</span>
-                        <h3>Tribal Community Development</h3>
-                        <p>Working with tribal communities in East Coast Belt — Odisha (Mayurbhanj), Andhra Pradesh
-                            (Vishakhapatnam, Srikakulam, Vizayanagram), and Jharkhand (Ranchi, Gamharia).</p>
-                        <ul class="program-highlights">
-                            <li>Education for tribal children</li>
-                            <li>Health & hygiene programs</li>
-                            <li>Livelihood skilling</li>
-                            <li>Cultural preservation</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="program-card">
-                    <div class="program-img"
-                        style="background-image: url('https://aarohanngo.org/wp-content/uploads/2023/05/IMG-20230206-WA0012.jpg');">
-                    </div>
-                    <div class="program-content">
-                        <span class="program-category">Advocacy</span>
-                        <h3>Aarohan With 3rd Gender</h3>
-                        <p>Working for transgender rights through collaborations with individuals, organizations, and
-                            government bodies including the National Human Rights Commission.</p>
-                        <ul class="program-highlights">
-                            <li>Financial literacy workshops</li>
-                            <li>Skill training in beauty culture</li>
-                            <li>Personality development</li>
-                            <li>Rights advocacy</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="program-card">
-                    <div class="program-img"
-                        style="background-image: url('https://aarohanngo.org/wp-content/uploads/2022/02/comm3-min-1.jpg');">
-                    </div>
-                    <div class="program-content">
-                        <span class="program-category">Community</span>
-                        <h3>Community Library</h3>
-                        <p>Interactive libraries encouraging reading habits and literacy. Locations include Jammun Wala
-                            Park, Jagdamba Camp, government schools in Mangolpuri-Balbir Nagar, and Sakipur Village.</p>
-                        <ul class="program-highlights">
-                            <li>Storytelling sessions</li>
-                            <li>Art, craft & music activities</li>
-                            <li>Film screenings & sports</li>
-                            <li>Safe learning spaces</li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Methodology Section -->
-    <section class="methodology section">
-        <div class="container">
-            <div class="method-intro">
-                <div class="method-intro-content">
-                    <h2>Our Unique Methodology</h2>
-                    <p>All programs are developed in response to children's needs. The healthy growth of a child is possible with a conducive environment encompassing family, community, education, income, and dignity.</p>
-                </div>
-            </div>
-            <div class="method-list">
-                <div class="method-item">
-                    <span class="method-num">01</span>
-                    <h4>Play-Way Teaching</h4>
-                    <p>Audio-visual materials, role-playing, games, clay modeling, colors, and drawing enhance emotional and creative expression.</p>
-                </div>
-                <div class="method-item">
-                    <span class="method-num">02</span>
-                    <h4>Leadership Building</h4>
-                    <p>Every child is given responsibilities — class monitor, food monitor — to build leadership qualities from an early age.</p>
-                </div>
-                <div class="method-item">
-                    <span class="method-num">03</span>
-                    <h4>24×7 Parent Engagement</h4>
-                    <p>Teachers available via WhatsApp groups round the clock. Regular counseling sessions and monthly meetings with school teachers.</p>
-                </div>
-                <div class="method-item">
-                    <span class="method-num">04</span>
-                    <h4>Trauma-Informed Care</h4>
-                    <p>Teachers trained to handle traumatized children. Special counseling support and POSCO E-Box awareness.</p>
-                </div>
-                <div class="method-item">
-                    <span class="method-num">05</span>
-                    <h4>Bridge Education</h4>
-                    <p>Non-formal education and bridge classes for out-of-school children. Curriculum aligned to State/Central Board standards.</p>
-                </div>
-                <div class="method-item">
-                    <span class="method-num">06</span>
-                    <h4>Nutrition & Health</h4>
-                    <p>Mid-day meals provided for proper nutrition. Regular health check-ups and hygiene education.</p>
-                </div>
-            </div>
-            <div class="method-outcomes">
-                <div class="outcome-item">
-                    <span class="outcome-number">2-3%</span>
-                    <span class="outcome-label">Dropout Rate</span>
-                </div>
-                <div class="outcome-item">
-                    <span class="outcome-number">60-100%</span>
-                    <span class="outcome-label">Student Scores</span>
-                </div>
-                <div class="outcome-item">
-                    <span class="outcome-number">Active</span>
-                    <span class="outcome-label">Volunteer Program</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team section" id="team">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Our Team</span>
-                <h2 class="section-title">Board Members</h2>
-                <p class="section-subtitle">Dedicated leaders driving our mission forward</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-img-wrapper">
-                        <img src="media/Peoples/Rani.jpg" alt="Ms. Rani Patel" class="team-photo" style="border-radius: 24px;">
-                        <span class="team-initials">RP</span>
-                    </div>
-                    <h4>Ms. Rani Patel</h4>
-                    <span class="team-role">Founder & President</span>
-                </div>
-                <div class="team-card">
-                    <div class="team-img-wrapper">
-                        <img src="media/Peoples/rekha-khandalwal.jpg" alt="Dr. Rekha Khandelwal" class="team-photo" style="border-radius: 24px;">
-                        <span class="team-initials">RK</span>
-                    </div>
-                    <h4>Dr. Rekha Khandelwal</h4>
-                    <span class="team-role">Vice President</span>
-                </div>
-                <div class="team-card">
-                    <div class="team-img-wrapper">
-                        <img src="media/Peoples/Shashi Sahai.jpg" alt="Mr. Shashi Sahai" class="team-photo" style="border-radius: 24px;">
-                        <span class="team-initials">SS</span>
-                    </div>
-                    <h4>Mr. Shashi Sahai</h4>
-                    <span class="team-role">Treasurer</span>
-                </div>
-                <div class="team-card">
-                    <div class="team-img-wrapper">
-                        <img src="media/Peoples/Esha Guha.jpg" alt="Ms. Esha Guha" class="team-photo" style="border-radius: 24px;">
-                        <span class="team-initials">EG</span>
-                    </div>
-                    <h4>Ms. Esha Guha</h4>
-                    <span class="team-role">Joint Secretary</span>
-                </div>
-            </div>
-            <div class="team-executive">
-                <h4>Executive Members</h4>
-                <div class="executive-list">
-                    <span>Ms. Kiran Soni Gupta</span>
-                    <span>Dr. Baran Farooqi</span>
-                    <span>Mr. Deepak Kumar Kulshresth</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section class="awards section" id="awards">
-        <div class="container">
-            <div class="awards-header">
-                <span class="section-badge badge-dark">Recognition</span>
-                <h2>Awards & Accolades</h2>
-                <p>Validation of our commitment to excellence — recognized for impact, innovation, and dedication</p>
-            </div>
-
-            <div class="awards-showcase">
-                <div class="award-featured">
-                    <div class="award-trophy"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></div>
-                    <div class="award-featured-content">
-                        <span class="award-badge">Best Performance</span>
-                        <h3>Best NGO Award 2017-18</h3>
-                        <p>India Habitat Centre</p>
-                        <span class="award-year-tag">2017-18</span>
-                    </div>
-                </div>
-
-                <div class="awards-grid">
-                    <div class="award-card">
-                        <div class="award-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-4.5 3-2-6 6-2 3-6 3 6 6 2-2 6-4.5-3z"></path><path d="M12 12v9"></path><path d="M9 21h6"></path></svg></div>
-                        <div class="award-info">
-                            <span class="award-year">2019</span>
-                            <h4>Leadership in Education Award</h4>
-                            <p>Delhi Institute of Management & Niti Aayog</p>
-                        </div>
-                    </div>
-                    <div class="award-card">
-                        <div class="award-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
-                        <div class="award-info">
-                            <span class="award-year">2019</span>
-                            <h4>Healthcare Leadership Award</h4>
-                            <p>Zee Business</p>
-                        </div>
-                    </div>
-                    <div class="award-card">
-                        <div class="award-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
-                        <div class="award-info">
-                            <span class="award-year">2019</span>
-                            <h4>51 Most Impactful Social Innovators</h4>
-                            <p>World CSR Federation</p>
-                        </div>
-                    </div>
-                    <div class="award-card">
-                        <div class="award-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 1 0-16 0"></path></svg></div>
-                        <div class="award-info">
-                            <span class="award-year">2018</span>
-                            <h4>Beti Bachao, Beti Padhao Award</h4>
-                            <p>Ramraj (Good Governance)</p>
-                        </div>
-                    </div>
-                    <div class="award-card">
-                        <div class="award-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg></div>
-                        <div class="award-info">
-                            <span class="award-year">2013</span>
-                            <h4>Nayi Soch Award</h4>
-                            <p>Star Plus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recognition-banner">
-                <div class="recognition-content">
-                    <span class="recognition-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg></span>
-                    <div>
-                        <h4>Also Recognized By</h4>
-                        <p>Our work has been studied and featured by international organizations and institutions</p>
-                    </div>
-                </div>
-                <div class="recognition-list">
-                    <div class="recognition-item">
-                        <span class="recognition-logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg></span>
-                        <span>University of Alabama</span>
-                        <small>Studied "childhood to livelihood" model</small>
-                    </div>
-                    <div class="recognition-item">
-                        <span class="recognition-logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
-                        <span>Save the Children Nepal</span>
-                        <small>Visited with 5 Nepalese NGOs</small>
-                    </div>
-                    <div class="recognition-item">
-                        <span class="recognition-logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg></span>
-                        <span>ARNEC Conference Journal</span>
-                        <small>UNICEF, UNESCO organized</small>
-                    </div>
-                    <div class="recognition-item">
-                        <span class="recognition-logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path><path d="M8 11h8"></path><path d="M8 7h6"></path></svg></span>
-                        <span>Humanity Magazine</span>
-                        <small>Singapore Edition</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="founder-recognition">
-                <div class="founder-badge">
-                    <span class="founder-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
-                    <div>
-                        <strong>Ms. Rani Patel</strong>
-                        <span>Recognized among 5 Women Achievers by Jamia Millia Islamia (Aug 2019)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="partners section">
-        <div class="container">
-            <div class="partners-header">
-                <h2>Our Supporters & Partners</h2>
-                <p>Collaborating with organizations that share our vision for a better world</p>
-            </div>
-            <div class="partners-slider-wrapper">
-                <div class="partners-slider" id="partnersSlider">
-                    <div class="partner-slide">
-                        <div class="partner-logo-card">
-                            <img src="media/partners/s1.jpg" alt="Partner 1">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/s2.jpg" alt="Partner 2">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/s3.jpg" alt="Partner 3">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/s4.jpg" alt="Partner 4">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/s5.jpg" alt="Partner 5">
-                        </div>
-                    </div>
-                    <div class="partner-slide">
-                        <div class="partner-logo-card">
-                            <img src="media/partners/zomato.jpg" alt="Zomato Feeding India">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/azim-premji.jpg" alt="Azim Premji Foundation">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/bank-of-america.jpg" alt="Bank of America">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/caf-america.jpg" alt="CAF America">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/deloitte.jpg" alt="Deloitte">
-                        </div>
-                    </div>
-                    <div class="partner-slide">
-                        <div class="partner-logo-card">
-                            <img src="media/partners/happiee-souls.jpg" alt="Happiee Souls">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/sjvn.jpg" alt="SJVN">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/ndtv.jpg" alt="NDTV">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/srf.png" alt="SRF">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/indian-railway.png" alt="Indian Railway">
-                        </div>
-                    </div>
-                    <div class="partner-slide">
-                        <div class="partner-logo-card">
-                            <img src="media/partners/bharat.png" alt="Bharat">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/avery.png" alt="Avery">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/aide-et-action.png" alt="Aide et Action">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/svp.png" alt="SVP">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/health-insurance.png" alt="Health Insurance">
-                        </div>
-                    </div>
-                    <div class="partner-slide">
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d1.jpg" alt="Donor 1">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d2.jpg" alt="Donor 2">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d3.jpg" alt="Donor 3">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d4.jpg" alt="Donor 4">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d5.jpg" alt="Donor 5">
-                        </div>
-                    </div>
-                    <div class="partner-slide">
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d6.jpg" alt="Donor 6">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d7.jpg" alt="Donor 7">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d8.jpg" alt="Donor 8">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d9.jpg" alt="Donor 9">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d10.jpg" alt="Donor 10">
-                        </div>
-                    </div>
-                    <div class="partner-slide">
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d11.jpg" alt="Donor 11">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/d12.jpg" alt="Donor 12">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/don.jpg" alt="Donor">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/mf.jpg" alt="MF">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/sita.jpg" alt="Sita">
-                        </div>
-                    </div>
-                    <div class="partner-slide">
-                        <div class="partner-logo-card">
-                            <img src="media/partners/fusion.jpg" alt="Fusion">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/casio.webp" alt="Casio">
-                        </div>
-                        <div class="partner-logo-card">
-                            <img src="media/partners/1-10.jpg" alt="Partner">
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-controls">
-                    <button class="partner-slider-btn prev" id="partnerSliderPrev">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </button>
-                    <button class="partner-slider-btn next" id="partnerSliderNext">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                    </button>
-                </div>
-                <div class="slider-indicators" id="partnerSliderIndicators"></div>
-            </div>
-            <div class="partners-cta">
-                <p>Want to partner with us?</p>
-                <a href="mailto:aarohan.ngo@gmail.com" class="btn btn-outline-dark">Get In Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Donate Section -->
-    <section class="donate section" id="donate">
-        <div class="container">
-            <div class="donate-wrapper">
-                <div class="donate-content">
-                    <span class="section-badge">Make a Difference</span>
-                    <h2 class="section-title">Support Our Cause</h2>
-                    <p>Your contribution helps us provide education, healthcare, and opportunities to those who need it
-                        most. Every rupee counts in building brighter futures.</p>
-
-                    <div class="donate-cta">
-                        <a href="https://pages.razorpay.com/Aarohan" target="_blank" class="btn btn-primary btn-lg">Donate
-                            Online Now</a>
-                    </div>
-
-                    <div class="donate-info">
-                        <div class="info-block">
-                            <h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:8px;"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 7V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3"></path></svg>Domestic Donations</h4>
-                            <p><strong>Bank:</strong> IDBI Bank</p>
-                            <p><strong>Account Name:</strong> Aarohan</p>
-                            <p><strong>A/C No:</strong> 010104000256483</p>
-                            <p><strong>IFSC:</strong> IBKL0000010</p>
-                        </div>
-                        <div class="info-block">
-                            <h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:8px;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Foreign Donations (FCRA)</h4>
-                            <p><strong>Bank:</strong> State Bank of India</p>
-                            <p><strong>A/C No:</strong> 00000040102447467</p>
-                            <p><strong>SWIFT:</strong> SBININBB104</p>
-                            <p><strong>Branch:</strong> Sansad Marg, New Delhi</p>
-                        </div>
-                    </div>
-
-                    <div class="tax-info">
-                        <span>80G Tax Exemption Available</span>
-                        <span>•</span>
-                        <span>FCRA Compliant</span>
-                        <span>•</span>
-                        <span>12A Registered</span>
-                    </div>
-                </div>
-                <div class="donate-inkind">
-                    <h4>We Also Accept In-Kind Donations</h4>
-                    <div class="inkind-list">
-                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>Books & Stationery</span>
-                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px;"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path></svg>Clothes</span>
-                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px;"><circle cx="12" cy="8" r="5"></circle><path d="M3 21h18c0-3-2-5-4-6-1.5.5-2 2-2 4"></path><circle cx="9" cy="6" r="1"></circle></svg>Toys</span>
-                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px;"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>Smartphones/Tablets</span>
-                    </div>
-                    <a href="mailto:aarohan.ngo@gmail.com" class="btn btn-outline-dark">Contact Us to Donate</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Contact Us</span>
-                <h2 class="section-title">Get In Touch</h2>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                        </span>
-                        <div>
-                            <h4>Address</h4>
-                            <p>B-127, Malviya Nagar,<br>New Delhi - 110017, India</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </span>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:aarohan.ngo@gmail.com">aarohan.ngo@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                        </span>
-                        <div>
-                            <h4>Phone</h4>
-                            <p><a href="tel:+911141007526">+91-11-41007526</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="#" class="social-btn">Facebook</a>
-                        <a href="#" class="social-btn">Instagram</a>
-                        <a href="#" class="social-btn">LinkedIn</a>
-                        <a href="#" class="social-btn">Twitter</a>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <h4>Send us a message</h4>
-                    <div class="form-row">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <input type="text" placeholder="Subject">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <img src="https://aarohanngo.org/wp-content/uploads/2026/01/Aarohan_Logo__4.png" alt="Aarohan"
-                        class="footer-logo">
-                    <p>Making a difference since 2005. Building stepping stones for deprived, excluded, and marginalized
-                        children and women.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="pages/about-us.html">About Us</a></li>
-                        <li><a href="pages/what.html">Our Work</a></li>
-                        <li><a href="#impact">Impact</a></li>
-                        <li><a href="pages/donate-now.html">Donate</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="pages/our-board.html">Our Board</a></li>
+                        <li><a href="pages/what.html">What We Do</a></li>
+                        <li><a href="pages/methodology.html">Aarohan – Methodology</a></li>
+                        <li><a href="pages/awards-recognition.html">Awards & Recognition</a></li>
+                        <li><a href="pages/supporters-donors.html">Supporters & Donors</a></li>
+                        <li><a href="pages/fcra.html">Compliances</a></li>
+                        <li><a href="pages/annual-report.html">Annual Report</a></li>
                     </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Programs</h4>
-                    <ul>
-                        <li><a href="pages/early-childhood-care-and-development.html">Early Childhood</a></li>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#" class="nav-item-animated">
+                        <i class="fas fa-project-diagram"></i>
+                        <div class="nav-text">
+                            <strong>Projects</strong>
+                            <small>our work</small>
+                        </div>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="pages/early-childhood-care-and-development.html">Early Childhood Care and Development</a></li>
                         <li><a href="pages/after-school-hours.html">After School Hours</a></li>
                         <li><a href="pages/women-empowerment.html">Women Empowerment</a></li>
                         <li><a href="pages/tribal-community.html">Tribal Community</a></li>
-                        <li><a href="pages/transgender-projects.html">Transgender Support</a></li>
+                        <li><a href="pages/transgender-projects.html">Aarohan With 3rd Gender</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Other Project <i class="fas fa-chevron-right" style="font-size: 0.8em; float: right; margin-top: 5px;"></i></a>
+                            <ul class="sub-menu sub-menu-right">
+                                <li><a href="pages/centre-for-excellence.html">Center for Excellence</a></li>
+                                <li><a href="pages/community-library.html">Community Library</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#" class="nav-item-animated">
+                        <i class="fas fa-bullhorn"></i>
+                        <div class="nav-text">
+                            <strong>Campaign</strong>
+                            <small>join us</small>
+                        </div>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="pages/covid-response.html">Covid Response</a></li>
+                        <li><a href="pages/digital-transformation.html">Digital Transformation</a></li>
+                        <li><a href="pages/vaccination-for-transgender-marginalized.html">Vaccination for Transgender & Marginalized</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pages/contact.html" class="nav-item-animated">
+                        <i class="fas fa-envelope"></i>
+                        <div class="nav-text">
+                            <strong>Contact</strong>
+                            <small>drop a line</small>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="pages/donate-now.html" class="sign-in">Donate</a>
+            <a href="pages/contact.html" class="btn-contact">
+                Volunteer
+                <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Fixed the image sizes and positioning by pushing them outwards and using reliable placeholder links -->
+            <img src="media/hero-left.jpg" alt="Education" class="hero-img-left">
+            <div class="hero-img-right">
+                <img src="media/hero-right.jpg" alt="Community Support">
+            </div>
+            
+            <svg class="hero-arrow-left" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,80 Q50,90 90,20" fill="none" stroke="#6B46FF" stroke-width="2" stroke-linecap="round"/>
+                <path d="M80,15 L90,20 L95,30" fill="none" stroke="#6B46FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <svg class="hero-concentric" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle class="ring-1" cx="50" cy="50" r="10" fill="none" stroke="#E8DDFF" stroke-width="3" stroke-dasharray="45 18" stroke-linecap="round"/>
+                <circle class="ring-2" cx="50" cy="50" r="25" fill="none" stroke="#E8DDFF" stroke-width="3" stroke-dasharray="115 42" stroke-linecap="round"/>
+                <circle class="ring-3" cx="50" cy="50" r="40" fill="none" stroke="#E8DDFF" stroke-width="3" stroke-dasharray="190 61" stroke-linecap="round"/>
+            </svg>
+
+            <svg class="hero-badge" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path id="curve" d="M 15 50 A 35 35 0 1 1 85 50 A 35 35 0 1 1 15 50" fill="transparent" />
+                <text font-family="'Outfit', sans-serif" font-size="11" font-weight="bold" fill="#FFC436" letter-spacing="3">
+                    <textPath href="#curve">AAROHAN NGO EMPOWER</textPath>
+                </text>
+                <circle cx="50" cy="50" r="15" fill="#FFC436" />
+            </svg>
+
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="word">Creating</span> <span class="word">a</span><br>
+                    <span class="word handwritten text-purple">better
+                        <svg class="underline-purple" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M5,15 Q30,5 50,15 T95,15" fill="none" stroke="#6B46FF" stroke-width="3" stroke-linecap="round"/></svg>
+                    </span> 
+                    <span class="word">and</span> 
+                    <span class="word handwritten text-yellow">brighter
+                        <svg class="underline-yellow" viewBox="0 0 100 15" preserveAspectRatio="none"><path d="M5,10 Q50,0 95,10" fill="none" stroke="#FFC436" stroke-width="4" stroke-linecap="round"/></svg>
+                    </span><br>
+                    <span class="word">future</span> <span class="word">for</span> <span class="word">all</span>
+                </h1>
+                <a href="pages/donate-now.html" class="btn-start">
+                    Join Our Mission
+                    <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                <p>Join our mission to support education, empower women, and drive community development. Together we can create lasting impact.</p>
+            </div>
+        </section>
+
+        <!-- Interactive Features Section -->
+        <section class="features">
+            <div class="features-top">
+                <h2 class="features-title">Our <span class="handwritten text-purple">impactful</span> programs</h2>
+                <div class="features-tags">
+                    <div class="tag tag-1">#education</div>
+                    <div class="tag tag-2">#empower</div>
+                    <div class="tag tag-3">#community</div>
+                </div>
+            </div>
+            <div class="features-grid">
+                <a href="pages/early-childhood-care-and-development.html" style="text-decoration: none;">
+                    <div class="feature-card card-purple" style="cursor: pointer; height: 100%;">
+                        <div class="card-icon"><i class="fas fa-book-open" style="color: #1F1F39;"></i></div>
+                        <svg class="card-decoration" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="50" r="15" fill="none" stroke="#6B46FF" stroke-width="3"/>
+                            <circle cx="100" cy="50" r="30" fill="none" stroke="#6B46FF" stroke-width="3"/>
+                            <circle cx="100" cy="50" r="45" fill="none" stroke="#6B46FF" stroke-width="3"/>
+                            <circle cx="100" cy="50" r="60" fill="none" stroke="#6B46FF" stroke-width="3"/>
+                        </svg>
+                        <h3>Child<br>Education</h3>
+                        <p>Providing quality education and resources to underprivileged children.</p>
+                    </div>
+                </a>
+                <a href="pages/women-empowerment.html" style="text-decoration: none;">
+                    <div class="feature-card card-dark-purple" style="cursor: pointer; height: 100%;">
+                        <div class="card-icon"><i class="fas fa-hands-helping" style="color: #6B46FF;"></i></div>
+                        <svg class="card-decoration" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50,0 Q30,20 50,50 T100,80 L100,0 Z" fill="#9D84FF"/>
+                        </svg>
+                        <h3>Women<br>Empowerment</h3>
+                        <p>Skill development and support programs to empower rural women.</p>
+                    </div>
+                </a>
+                <a href="pages/what.html" style="text-decoration: none;">
+                    <div class="feature-card card-yellow" style="cursor: pointer; height: 100%;">
+                        <div class="card-icon"><i class="fas fa-heartbeat" style="color: #1F1F39;"></i></div>
+                        <svg class="card-decoration" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <pattern id="dots" x="0" y="0" width="15" height="15" patternUnits="userSpaceOnUse">
+                                <circle fill="#E6B820" cx="7.5" cy="7.5" r="2.5"></circle>
+                            </pattern>
+                            <rect x="0" y="0" width="100" height="100" fill="url(#dots)" opacity="0.6"/>
+                        </svg>
+                        <h3>Health<br>Initiatives</h3>
+                        <p>Organizing health programs and support for marginalized communities.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Learning Materials Section -->
+        <section class="learning">
+            <div class="learning-content">
+                <h2>The support we provide is 
+                    <span class="handwritten text-purple">transformative
+                        <svg class="oval-highlight" viewBox="0 0 100 40" preserveAspectRatio="none">
+                            <ellipse cx="50" cy="20" rx="48" ry="18" fill="none" stroke="#FFC436" stroke-width="3" transform="rotate(-3 50 20)"/>
+                        </svg>
+                    </span> 
+                    for communities
+                </h2>
+                <p>With your help, we bring hope and resources to those who need it most, ensuring a sustainable and brighter future for our society.</p>
+                <a href="pages/about-us.html" class="btn-learn">
+                    Discover More
+                    <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+            <div class="learning-visuals">
+                <div class="learning-visuals-inner">
+                    <img src="media/learning-left.jpg" style="position: absolute; top: 0; left: 60%; width: 200px; border-radius: 30px; z-index: 2; box-shadow: 0 15px 30px rgba(0,0,0,0.1);" alt="Girl pointing">
+                    <div style="position: absolute; top: 180px; left: 0; width: 450px; height: 220px; background: #FFC436; border-radius: 110px; display: flex; align-items: center; padding-left: 30px; z-index: 1; box-shadow: 0 15px 30px rgba(0,0,0,0.05);">
+                        <img src="media/learning-right.jpg" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.1);" alt="Kid learning">
+                        <svg width="120" height="50" style="margin-left: auto; margin-right: 40px;" viewBox="0 0 100 40">
+                            <path d="M0,20 Q50,0 100,20" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+                        </svg>
+                    </div>
+                    <div style="position: absolute; top: 30px; left: 45%; width: 200px; height: 100px; background: #C1B0FF; border-radius: 50px; z-index: 0; transform: rotate(-15deg);"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <svg class="team-decor-sun" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="25" fill="#FFC436"/>
+            <path d="M50,10 L50,20 M50,80 L50,90 M10,50 L20,50 M80,50 L90,50 M22,22 L29,29 M71,71 L78,78 M22,78 L29,71 M71,22 L78,29" stroke="#FFC436" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <svg class="team-decor-dots" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <pattern id="dots2" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle fill="white" cx="10" cy="10" r="3" opacity="0.4"></circle>
+            </pattern>
+            <rect x="0" y="0" width="100" height="100" fill="url(#dots2)"/>
+        </svg>
+
+        <div class="team-header">
+            <h2>We aim to help communities <br>
+                <span class="handwritten text-yellow" style="font-size: 1.1em; letter-spacing: 1px;">discover the power of collective</span><br>
+                action and grow into self-<br>reliant societies.
+            </h2>
+        </div>
+        <div class="team-grid container">
+            <div class="team-member">
+                <div class="member-avatar bg-yellow">
+                    <img src="media/Peoples/Rani.jpg" alt="Rani Patel">
+                </div>
+                <h4>Rani Patel</h4>
+                <p>Founder & Director</p>
+            </div>
+            <div class="team-member">
+                <div class="member-avatar bg-pink">
+                    <img src="media/Peoples/Esha-Guha.jpg" alt="Esha Guha">
+                </div>
+                <h4>Esha Guha</h4>
+                <p>Core Team Member</p>
+            </div>
+            <div class="team-member">
+                <div class="member-avatar bg-purple">
+                    <img src="media/Peoples/Shashi-Sahai.jpg" alt="Shashi Sahai">
+                </div>
+                <h4>Shashi Sahai</h4>
+                <p>Board Member</p>
+            </div>
+            <div class="team-member">
+                <div class="member-avatar bg-green">
+                    <img src="media/Peoples/rekha-khandalwal.jpg" alt="Dr. Rekha Khandelwal">
+                </div>
+                <h4>Dr. Rekha Khandelwal</h4>
+                <p>Board Member</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Blog Section -->
+        <section class="blog">
+            <h2>Read our <span class="handwritten text-purple">stories</span></h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="media/blog-1.jpg" alt="Education Drive">
+                    <div class="blog-content">
+                        <h4>Community Library</h4>
+                        <p>Our recent education drive and library setup impacted thousands of young minds across rural areas.</p>
+                        <a href="pages/community-library.html" class="blog-link">
+                            Read More
+                            <div class="arrow-circle"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="media/blog-2.jpg" alt="Women Skill Workshop">
+                    <div class="blog-content">
+                        <h4>Women Skill Workshop</h4>
+                        <p>Empowering women through tailoring and crafts training programs in the community.</p>
+                        <a href="pages/women-empowerment.html" class="blog-link">
+                            Read More
+                            <div class="arrow-circle"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="media/blog-3.jpg" alt="Health Camp">
+                    <div class="blog-content">
+                        <h4>Transgender Projects</h4>
+                        <p>Providing specialized support and advocacy for the transgender and marginalized communities.</p>
+                        <a href="pages/transgender-projects.html" class="blog-link">
+                            Read More
+                            <div class="arrow-circle"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Support Us Section -->
+    <section class="support-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Appeal for <span class="handwritten text-yellow">Help</span> & Support</h2>
+                <p>Join hands to make the circle of good bigger.</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="icon-wrap bg-purple"><i class="fas fa-hands-helping"></i></div>
+                    <h4>Volunteer</h4>
+                    <p>Share your knowledge with our children. Get involved in our community projects.</p>
+                </div>
+                <div class="support-card">
+                    <div class="icon-wrap bg-yellow"><i class="fas fa-share-alt"></i></div>
+                    <h4>Follow. Like. Share.</h4>
+                    <p>Follow us on social media. Share our posts with your network to reach new supporters.</p>
+                </div>
+                <div class="support-card">
+                    <div class="icon-wrap bg-pink"><i class="fas fa-bullhorn"></i></div>
+                    <h4>Spread The Word</h4>
+                    <p>Talk about us to your friends and family. Many good people want to get involved.</p>
+                </div>
+                <div class="support-card">
+                    <div class="icon-wrap bg-green"><i class="fas fa-donate"></i></div>
+                    <h4>Donate</h4>
+                    <p>Aarohan can use your financial assistance as well as donations in kind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our <span class="handwritten text-purple">Work</span></h2>
+            </div>
+            <div class="gallery-grid">
+                <img src="media/gallery-1.jpg" alt="Our Work">
+                <img src="media/gallery-2.jpg" alt="Our Work">
+                <img src="media/gallery-3.jpg" alt="Our Work">
+                <img src="media/gallery-4.jpg" alt="Our Work">
+                <img src="media/gallery-5.jpg" alt="Our Work">
+                <img src="media/gallery-6.jpg" alt="Our Work">
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers-section">
+        <div class="container">
+            <div class="careers-grid">
+                <div class="careers-content">
+                    <img src="media/careers.jpg" alt="Careers" class="careers-img">
+                    <h2>Careers at <span class="text-purple">AAROHAN</span></h2>
+                    <p style="font-size: 1.2rem; color: var(--light-text);">We have been making a difference since 2005. We are a team of experienced and dedicated individuals who have strived to make a difference in the lives of children and women through education, skilling and awareness. Build your career with AAROHAN. You will see the positive impact you have been able to make in this world.</p>
+                </div>
+                <div class="careers-form">
+                    <h3>Join Our Team</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Your Phone" required>
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="btn-start">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="pages/what.html">What We Do</a></li>
+                        <li><a href="pages/methodology.html">Methodology</a></li>
+                        <li><a href="pages/awards-recognition.html">Awards & Recognition</a></li>
+                        <li><a href="pages/supporters-donors.html">Supporters & Donors</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Resources</h4>
+                <div class="footer-col">
+                    <h4>Projects</h4>
                     <ul>
-                        <li><a href="pages/annual-report.html">Annual Reports</a></li>
-                        <li><a href="pages/fcra.html">FCRA Compliance</a></li>
-                        <li><a href="mailto:aarohan.ngo@gmail.com">Volunteer</a></li>
+                        <li><a href="pages/early-childhood-care-and-development.html">Early Childhood Care And Development</a></li>
+                        <li><a href="pages/after-school-hours.html">Education Projects</a></li>
+                        <li><a href="pages/women-empowerment.html">Women Empowerment</a></li>
+                        <li><a href="pages/tribal-community.html">Tribal Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="pages/transgender-projects.html">Transgender Project</a></li>
+                        <li><a href="pages/centre-for-excellence.html">Centre For Excellence</a></li>
+                        <li><a href="pages/community-library.html">Community Library</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@aarohanngo.org">info@aarohanngo.org</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:91-11-41007526">+91-11-41007526</a></li>
+                    </ul>
+                    <h4 style="margin-top: 30px;">Join as Volunteer</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-hands-helping"></i> <a href="mailto:volunteer@aarohanngo.org">volunteer@aarohanngo.org</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2024 Aarohan NGO. All rights reserved.</p>
-                <p>FCRA Compliant | 80G Tax Exempt | 12A Registered | Niti Aayog Registered</p>
+                <p>&copy; Copyright 2026 by Aarohan NGO. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/AarohanSociety/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/aarohan_ngo"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/aarohan_ngo"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/aarohan-ngo/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
-</body>
+    <!-- Donate Mail Widget -->
+    <div class="donate-widget-container">
+        <a href="pages/donate-now.html" style="text-decoration: none; color: inherit;">
+            <div class="letter-image">
+                <div class="donate-tooltip">Donate us!</div>
+                <div class="animated-mail">
+                    <div class="back-fold"></div>
+                    <div class="letter">
+                        <div class="letter-border"></div>
+                        <div class="letter-title"></div>
+                        <div class="letter-context"></div>
+                        <div class="letter-stamp">
+                            <div class="letter-stamp-inner"></div>
+                        </div>
+                    </div>
+                    <div class="top-fold"></div>
+                    <div class="body"></div>
+                    <div class="left-fold"></div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+        </a>
+    </div>
 
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        // Register GSAP ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // --- Hero Section (On Load) ---
+        const heroTl = gsap.timeline();
+        heroTl.from("header", { y: -20, opacity: 0, duration: 0.8, ease: "power3.out" })
+              .from(".hero h1", { y: 50, opacity: 0, duration: 1, ease: "power3.out" }, "-=0.4")
+              .from(".hero p", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.6")
+              .from(".btn-start", { y: 20, opacity: 0, duration: 0.6, ease: "back.out(1.7)" }, "-=0.4")
+              .from(".hero-img-left", { x: -50, opacity: 0, duration: 1, ease: "power3.out" }, "-=1")
+              .from(".hero-img-right", { x: 50, opacity: 0, duration: 1, ease: "power3.out" }, "-=1")
+              .from(".hero-concentric, .hero-arrow-left, .hero-badge", { scale: 0, opacity: 0, duration: 0.8, stagger: 0.2, ease: "back.out(1.5)", clearProps: "all" }, "-=0.6");
+
+        // --- Features Section (On Scroll) ---
+        gsap.from(".features-top", {
+            scrollTrigger: { trigger: ".features", start: "top 80%" },
+            y: 40, opacity: 0, duration: 0.8, ease: "power3.out"
+        });
+
+        gsap.from(".feature-card", {
+            scrollTrigger: { trigger: ".features", start: "top 80%" },
+            y: 60, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power3.out", delay: 0.2
+        });
+
+        // --- Learning Section (On Scroll) ---
+        gsap.from(".learning-content", {
+            scrollTrigger: { trigger: ".learning", start: "top 75%" },
+            x: -60, opacity: 0, duration: 1, ease: "power3.out"
+        });
+
+        gsap.from(".learning-visuals", {
+            scrollTrigger: { trigger: ".learning", start: "top 75%" },
+            x: 60, opacity: 0, duration: 1, ease: "power3.out"
+        });
+
+        // --- Team Section (On Scroll) ---
+        gsap.from(".team-header", {
+            scrollTrigger: { trigger: ".team-section", start: "top 80%" },
+            y: 40, opacity: 0, duration: 0.8, ease: "power3.out"
+        });
+
+        gsap.from(".team-member", {
+            scrollTrigger: { trigger: ".team-section", start: "top 80%" },
+            y: 50, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power3.out", delay: 0.2
+        });
+
+        // --- Blog Section (On Scroll) ---
+        gsap.from(".blog h2", {
+            scrollTrigger: { trigger: ".blog", start: "top 80%" },
+            y: 30, opacity: 0, duration: 0.8, ease: "power3.out"
+        });
+
+        gsap.from(".blog-card", {
+            scrollTrigger: { trigger: ".blog", start: "top 80%" },
+            y: 50, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power3.out", delay: 0.2
+        });
+
+        // --- Support Section (On Scroll) ---
+        gsap.from(".support-section .section-header", { scrollTrigger: { trigger: ".support-section", start: "top 80%" }, y: 30, opacity: 0, duration: 0.8, ease: "power3.out" });
+        gsap.from(".support-card", { scrollTrigger: { trigger: ".support-section", start: "top 80%" }, y: 50, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power3.out", delay: 0.2 });
+
+        // --- Gallery Section (On Scroll) ---
+        gsap.from(".gallery-section .section-header", { scrollTrigger: { trigger: ".gallery-section", start: "top 80%" }, y: 30, opacity: 0, duration: 0.8, ease: "power3.out" });
+        gsap.from(".gallery-grid img", { scrollTrigger: { trigger: ".gallery-section", start: "top 80%" }, scale: 0.8, opacity: 0, duration: 0.8, stagger: 0.1, ease: "back.out(1.5)", delay: 0.2 });
+
+        // --- Careers Section (On Scroll) ---
+        gsap.from(".careers-img, .careers-content h2, .careers-content p", { scrollTrigger: { trigger: ".careers-section", start: "top 80%" }, x: -50, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power3.out" });
+        gsap.from(".careers-form", { scrollTrigger: { trigger: ".careers-section", start: "top 80%" }, x: 50, opacity: 0, duration: 0.8, ease: "power3.out" });
+
+        // --- Sticky Header Logic ---
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
 </html>

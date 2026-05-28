@@ -227,12 +227,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     // SMOOTH SCROLL
     // ========================================
+    const header = document.querySelector('.header');
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                const headerHeight = header.offsetHeight;
+                const headerHeight = header ? header.offsetHeight : 0;
                 const targetPosition = target.offsetTop - headerHeight;
                 window.scrollTo({
                     top: targetPosition,
