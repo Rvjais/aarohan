@@ -357,7 +357,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 /* Hero Section */
 .hero {
-  padding: 280px 0 180px;
+  padding: 350px 0 110px;
   text-align: center;
   position: relative;
   max-width: 1600px;
@@ -448,7 +448,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 /* Hero Graphics */
 .hero-img-left {
   position: absolute;
-  top: 80px;
+  top: 150px;
   left: 0%;
   width: 280px;
   height: 280px;
@@ -461,7 +461,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .hero-img-right {
   position: absolute;
-  top: 380px;
+  top: 450px;
   right: -2%;
   width: 380px;
   height: 380px;
@@ -480,7 +480,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .hero-arrow-left {
   position: absolute;
-  top: 480px;
+  top: 550px;
   left: 3%;
   width: 120px;
   z-index: 1;
@@ -506,7 +506,7 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .hero-concentric {
   position: absolute;
-  top: 680px;
+  top: 750px;
   left: 6%;
   width: 100px;
   z-index: 1;
@@ -538,9 +538,9 @@ nav ul .sub-menu li.has-dropdown:hover > .sub-menu-right {
 
 .hero-badge {
   position: absolute;
-  top: 80px;
+  top: 150px;
   right: 5%;
-  width: 160px;
+  width: 240px;
   animation: spin 20s linear infinite;
   z-index: 1;
 }
